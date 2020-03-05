@@ -7,7 +7,7 @@ import json
 def upload_file():
    return render_template('Index.html')
 	
-@app.route('/uploader', methods = ['GET', 'POST'])
+@app.route('/getImageDetails', methods = ['GET', 'POST'])
 def upload_file_2():
    if request.method == 'POST':
       f = request.files['file']
